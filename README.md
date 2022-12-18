@@ -20,25 +20,29 @@ Neumorphic Button lets you create Neumorphic Button that can be used throughout 
 1. Add the latest version of package to your pubspec.yaml
 ```
 dependencies:
-  fancy_containers: ^0.0.1
+  neumorphic_button: ^0.0.1
+```
+2. Import the package and use it in your Flutter App.
+```
+import 'package:neumorphic_button/neumorphic_button.dart';
 ```
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+There are a number of properties that you can specify for your neumorphic button:
+* height
+* width
+* border-radius
+* box-shape
+* shadow-color
+* spread-radius
+* blur-radius
+* onTap function
 
 ## Getting started
 
 TODO: List prerequisites and provide or point to information on how to
 start using the package.
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
-```dart
-const like = 'sample';
-```
 
 ## Additional information
 

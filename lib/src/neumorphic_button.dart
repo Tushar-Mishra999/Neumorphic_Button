@@ -20,7 +20,6 @@ class NeumorphicButton extends StatefulWidget {
       required this.onTap,
       required this.borderWidth,
       this.borderColor,
-      this.gradientColors,
       required this.topLeftOffset,
       required this.bottomRightOffset})
       : super(key: key);
@@ -43,7 +42,6 @@ class NeumorphicButton extends StatefulWidget {
   final Function onTap;
   final double? borderWidth;
   final Color? borderColor;
-  final List<Color>? gradientColors;
   @override
   State<NeumorphicButton> createState() => _NeumorphicButtonState();
 }
@@ -60,10 +58,6 @@ class _NeumorphicButtonState extends State<NeumorphicButton> {
         padding: widget.padding ?? EdgeInsets.all(15),
         margin: widget.margin ?? EdgeInsets.all(5),
         decoration: BoxDecoration(
-            //  gradient: LinearGradient(
-            //     colors: widget.gradientColors,
-            //     begin: Alignment.topLeft,
-            //     end: Alignment.bottomRight),
             color: widget.backgroundColor,
             borderRadius: BorderRadius.circular(widget.borderRadius),
             shape: widget.boxShape ?? BoxShape.rectangle,
