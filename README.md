@@ -27,7 +27,7 @@ import 'package:neumorphic_button/neumorphic_button.dart';
 ```
 ## Features
 
-There are a number of properties that you can specify for your neumorphic button:
+There are a number of properties that you can specify for your neumorphic button :
 * height
 * width
 * border-radius
