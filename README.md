@@ -81,7 +81,7 @@ class HomeScreen extends StatelessWidget {
 ```
 </td>
 <td>
-<img src="https://github.com/Tushar-Mishra999/VisageR/blob/9321df2e794cb2d7ed3a5abf8eb25c0a4db8278e/assets/apple1.jpeg" height="300" alt="">
+<img src="https://github.com/Tushar-Mishra999/VisageR/raw/9321df2e794cb2d7ed3a5abf8eb25c0a4db8278e/assets/apple1.jpeg" height="300" alt="">
 </td>
 </tr>
 </table>
@@ -129,7 +129,7 @@ class HomeScreen extends StatelessWidget {
 ```
 </td>
 <td>
-<img src="https://github.com/Tushar-Mishra999/VisageR/blob/9321df2e794cb2d7ed3a5abf8eb25c0a4db8278e/assets/apple2.jpeg" height="300" alt="">
+<img src="https://github.com/Tushar-Mishra999/VisageR/raw/9321df2e794cb2d7ed3a5abf8eb25c0a4db8278e/assets/apple2.jpeg" height="300" alt="">
 </td>
 </tr>
 </table>
