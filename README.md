@@ -11,10 +11,8 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
 # Neumorphic Button
-Neumorphic Button lets you create Neumorphic Button that can be used throughout your Flutter app.
+Neumorphic Button lets you create Neumorphic Button with a number of customizable features that can be used throughout your Flutter app.
 
 ## Installation
 1. Add the latest version of package to your pubspec.yaml
@@ -38,10 +36,82 @@ There are a number of properties that you can specify for your neumorphic button
 * blur-radius
 * onTap function
 
-## Getting started
+## Example
+### Light mode neumorphic button
+```
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+  @override
+  Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    return Scaffold(
+      backgroundColor: Colors.grey.shade300,
+      body: Center(
+          child: NeumorphicButton(
+        onTap: () {},
+        child: Image.asset(
+          'assets/apple.png',
+          height: 80,
+          color: Colors.grey[700],
+        ),
+        BorderRadius: 12,
+        bottomRightShadowBlurRadius: 15,
+        bottomRightShadowSpreadRadius: 1,
+        borderWidth: 5,
+        backgroundColor: Colors.grey.shade300,
+        topLeftShadowBlurRadius: 15,
+        topLeftShadowSpreadRadius: 1,
+        topLeftShadowColor: Colors.white,
+        bottomRightShadowColor: Colors.grey.shade500,
+        height: size.width * 0.5,
+        width: size.width * 0.5,
+        padding: EdgeInsets.all(50),
+        bottomRightOffset: Offset(4, 4),
+        topLeftOffset: Offset(-4, -4),
+      )),
+    );
+  }
+}
+```
+
+### Dark mode neumorphic button
+```
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    return Scaffold(
+      backgroundColor: Colors.grey.shade900,
+      body: Center(
+          child: NeumorphicButton(
+        onTap: () {},
+        child: Image.asset(
+          'assets/apple.png',
+          height: 80,
+          color: Colors.grey[700],
+        ),
+        BorderRadius: 12,
+        bottomRightShadowBlurRadius: 15,
+        bottomRightShadowSpreadRadius: 1,
+        borderWidth: 5,
+        backgroundColor: Colors.grey.shade900,
+        topLeftShadowBlurRadius: 15,
+        topLeftShadowSpreadRadius: 1,
+        topLeftShadowColor: Colors.grey.shade800,
+        bottomRightShadowColor: Colors.black,
+        height: size.width * 0.5,
+        width: size.width * 0.5,
+        padding: EdgeInsets.all(50),
+        bottomRightOffset: Offset(5, 5),
+        topLeftOffset: Offset(-5, -5),
+      )),
+    );
+  }
+}
+```
 
 
 ## Additional information
