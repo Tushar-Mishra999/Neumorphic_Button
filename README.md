@@ -12,16 +12,16 @@ and the Flutter guide for
 -->
 
 # Neumorphic Button
-This package lets you create Neumorphic Button with a number of customizable features that can be used throughout your Flutter app.You can create a minimal visual design style that uses monochromatic colors, subtle shadows and low contrasts to showcase buttons and cards, creating a really soft look.
+ This package lets you create Neumorphic Button with a number of customizable features that can be used throughout your Flutter app.You can create a minimal visual design style that uses monochromatic colors, subtle shadows and low contrasts to showcase buttons and cards, creating a really soft look.
 
 ## Installation
 1. Add the latest version of package to your pubspec.yaml
-```
+```dart
 dependencies:
   neumorphic_button: ^0.0.1
 ```
 2. Import the package and use it in your Flutter App.
-```
+```dart
 import 'package:neumorphic_button/neumorphic_button.dart';
 ```
 ## Features
@@ -127,7 +127,9 @@ class HomeScreen extends StatelessWidget {
 }
 ```
 </td>
+<td>
 <img src="https://github.com/Tushar-Mishra999/VisageR/blob/9321df2e794cb2d7ed3a5abf8eb25c0a4db8278e/assets/apple2.jpeg" height="300" alt="">
+</td>
 </tr>
 </table>
 
