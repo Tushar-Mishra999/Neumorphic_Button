@@ -12,7 +12,7 @@ and the Flutter guide for
 -->
 
 # Neumorphic Button
-Neumorphic Button lets you create Neumorphic Button with a number of customizable features that can be used throughout your Flutter app.
+This package lets you create Neumorphic Button with a number of customizable features that can be used throughout your Flutter app.You can create a minimal visual design style that uses monochromatic colors, subtle shadows and low contrasts to showcase buttons and cards, creating a really soft look.
 
 ## Installation
 1. Add the latest version of package to your pubspec.yaml
@@ -41,6 +41,7 @@ There are a number of properties that you can specify for your neumorphic button
 <table>
 <tr>
 <td>
+
 ```dart
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -76,15 +77,20 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-```dart
+```
 </td>
 <td>
-<img src="https://github.com/Tushar-Mishra999/VisageR/blob/main/assets/apple.png" alt="">
+<img src="https://github.com/Tushar-Mishra999/VisageR/blob/9321df2e794cb2d7ed3a5abf8eb25c0a4db8278e/assets/apple1.jpeg" height="300" alt="">
 </td>
 </tr>
 </table>
+
 ### Dark mode neumorphic button
-```
+<table>
+<tr>
+<td>
+
+```dart
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -120,5 +126,9 @@ class HomeScreen extends StatelessWidget {
   }
 }
 ```
+</td>
+<img src="https://github.com/Tushar-Mishra999/VisageR/blob/9321df2e794cb2d7ed3a5abf8eb25c0a4db8278e/assets/apple2.jpeg" height="300" alt="">
+</tr>
+</table>
 
 
