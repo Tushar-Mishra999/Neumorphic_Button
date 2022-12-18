@@ -16,12 +16,12 @@ Neumorphic Button lets you create Neumorphic Button with a number of customizabl
 
 ## Installation
 1. Add the latest version of package to your pubspec.yaml
-```
+```dart
 dependencies:
   neumorphic_button: ^0.0.1
 ```
 2. Import the package and use it in your Flutter App.
-```
+```dart
 import 'package:neumorphic_button/neumorphic_button.dart';
 ```
 ## Features
