@@ -38,10 +38,7 @@ There are a number of properties that you can specify for your neumorphic button
 
 ## Example
 ### Light mode neumorphic button
-<table>
-<tr>
-<td>
-```dart
+```
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -76,13 +73,9 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-```dart
-</td>
-<td>
-<img src="https://github.com/Tushar-Mishra999/VisageR/blob/main/assets/apple.png" alt="">
-</td>
-</tr>
-</table>
+```
+<img src="https://drive.google.com/file/d/1eujnDSgMc30Y8O8Si8fdVURGNTYo1tKf/view?usp=share_link" alt="">
+
 ### Dark mode neumorphic button
 ```
 class HomeScreen extends StatelessWidget {
