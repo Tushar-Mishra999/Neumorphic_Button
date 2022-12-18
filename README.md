@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
   }
 }
 ```
-<img src="[assets/apple1.jpeg](https://github.com/Tushar-Mishra999/VisageR/blob/9321df2e794cb2d7ed3a5abf8eb25c0a4db8278e/assets/apple1.jpeg)" alt="">
+<img src="https://github.com/Tushar-Mishra999/VisageR/blob/9321df2e794cb2d7ed3a5abf8eb25c0a4db8278e/assets/apple1.jpeg" alt="">
 
 ### Dark mode neumorphic button
 ```
