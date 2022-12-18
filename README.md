@@ -41,7 +41,6 @@ There are a number of properties that you can specify for your neumorphic button
 <table>
 <tr>
 <td>
-```
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -76,7 +75,6 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-```
 </td>
 <td>
 <img src="https://github.com/Tushar-Mishra999/VisageR/blob/main/assets/apple.png" alt="">
