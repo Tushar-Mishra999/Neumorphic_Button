@@ -9,37 +9,37 @@ class NeumorphicButton extends StatefulWidget {
       this.padding,
       this.margin,
       required this.backgroundColor,
-      required this.borderRadius,
+      this.borderRadius,
       this.boxShape,
       required this.bottomRightShadowColor,
-      required this.bottomRightShadowBlurRadius,
-      required this.bottomRightShadowSpreadRadius,
       required this.topLeftShadowColor,
-      required this.topLeftShadowBlurRadius,
-      required this.topLeftShadowSpreadRadius,
+      this.bottomRightShadowBlurRadius,
+      this.bottomRightShadowSpreadRadius,
+      this.topLeftShadowBlurRadius,
+      this.topLeftShadowSpreadRadius,
       required this.onTap,
-      required this.borderWidth,
+      this.borderWidth,
       this.borderColor,
-      required this.topLeftOffset,
-      required this.bottomRightOffset})
+      this.topLeftOffset,
+      this.bottomRightOffset})
       : super(key: key);
+  final Widget child;
   final double width;
   final double height;
-  final Widget child;
   final EdgeInsets? padding;
   final EdgeInsets? margin;
   final Color backgroundColor;
-  final double borderRadius;
+  final double? borderRadius;
   final BoxShape? boxShape;
   final Color bottomRightShadowColor;
-  final double bottomRightShadowBlurRadius;
-  final double bottomRightShadowSpreadRadius;
   final Color topLeftShadowColor;
-  final double topLeftShadowBlurRadius;
-  final Offset topLeftOffset;
-  final Offset bottomRightOffset;
-  final double topLeftShadowSpreadRadius;
-  final Function onTap;
+  final double? bottomRightShadowBlurRadius;
+  final double? bottomRightShadowSpreadRadius;
+  final double? topLeftShadowBlurRadius;
+  final double? topLeftShadowSpreadRadius;
+  final VoidCallback onTap;
+  final Offset? topLeftOffset;
+  final Offset? bottomRightOffset;
   final double? borderWidth;
   final Color? borderColor;
   @override
@@ -50,16 +50,15 @@ class _NeumorphicButtonState extends State<NeumorphicButton> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: widget.onTap(),
-      child: Container(
+      onTap: widget.onTap,
+      child: Container(  
         width: widget.width,
         height: widget.height,
-        child: widget.child,
-        padding: widget.padding ?? EdgeInsets.all(15),
-        margin: widget.margin ?? EdgeInsets.all(5),
+        padding: widget.padding ?? const EdgeInsets.all(15),
+        margin: widget.margin ?? const EdgeInsets.all(5),
         decoration: BoxDecoration(
             color: widget.backgroundColor,
-            borderRadius: BorderRadius.circular(widget.borderRadius),
+            borderRadius: BorderRadius.circular(widget.borderRadius ?? 10),
             shape: widget.boxShape ?? BoxShape.rectangle,
             border: Border.all(
               width: widget.borderWidth ?? 0,
@@ -68,15 +67,16 @@ class _NeumorphicButtonState extends State<NeumorphicButton> {
             boxShadow: [
               BoxShadow(
                   color: widget.bottomRightShadowColor,
-                  offset: widget.bottomRightOffset,
-                  blurRadius: widget.bottomRightShadowBlurRadius,
-                  spreadRadius: widget.bottomRightShadowSpreadRadius),
+                  offset: widget.bottomRightOffset ?? const Offset(2, 2),
+                  blurRadius: widget.bottomRightShadowBlurRadius ?? 15,
+                  spreadRadius: widget.bottomRightShadowSpreadRadius ?? 1),
               BoxShadow(
                   color: widget.topLeftShadowColor,
-                  offset: widget.topLeftOffset,
-                  blurRadius: widget.topLeftShadowBlurRadius,
-                  spreadRadius: widget.topLeftShadowSpreadRadius),
+                  offset: widget.topLeftOffset ?? const Offset(-2, -2),
+                  blurRadius: widget.topLeftShadowBlurRadius ?? 15,
+                  spreadRadius: widget.topLeftShadowSpreadRadius ?? 1),
             ]),
+            child: widget.child,
       ),
     );
   }
