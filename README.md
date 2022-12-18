@@ -14,7 +14,14 @@ and the Flutter guide for
 TODO: Put a short description of the package here that helps potential users
 know whether this package might be useful for them.
 # Neumorphic Button
+Neumorphic Button lets you create Neumorphic Button that can be used throughout your Flutter app.
 
+## Installation
+1. Add the latest version of package to your pubspec.yaml
+```
+dependencies:
+  fancy_containers: ^0.0.1
+```
 ## Features
 
 TODO: List what your package can do. Maybe include images, gifs, or videos.
