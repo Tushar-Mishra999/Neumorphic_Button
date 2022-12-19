@@ -1,6 +1,6 @@
 name: neumorphic_button
 description: Create Neumorphic Button with a number of customizable features that can be used throughout your Flutter app.
-version: 0.0.1
+version: 0.0.1+1
 homepage: https://github.com/Tushar-Mishra999/Neumorphic_Button
 
 environment:

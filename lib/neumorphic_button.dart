@@ -1,3 +1,3 @@
 library neumorphic_button;
-export 'src/neumorphic_button.dart';
 
+export 'src/neumorphic_button.dart';
