@@ -1,3 +1,7 @@
+## 0.0.1+2
+
+Added Documentation
+
 ## 0.0.1+1
 
 Example added

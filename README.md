@@ -19,7 +19,7 @@ and the Flutter guide for
 1. Add the latest version of package to your pubspec.yaml
 ```dart
 dependencies:
-  neumorphic_button: ^0.0.1
+  neumorphic_button: ^0.0.1+2
 ```
 2. Import the package and use it in your Flutter App.
 ```dart

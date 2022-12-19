@@ -50,35 +50,42 @@ class _NeumorphicButtonState extends State<NeumorphicButton> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: widget.onTap,//onTap function
+      onTap: widget.onTap, //onTap function
       child: Container(
         width: widget.width,
         height: widget.height,
         padding: widget.padding ?? const EdgeInsets.all(15),
         margin: widget.margin ?? const EdgeInsets.all(5),
         decoration: BoxDecoration(
-            color: widget.backgroundColor,//containerColor
-            borderRadius: BorderRadius.circular(widget.borderRadius ?? 10),//borderRadius
-            shape: widget.boxShape ?? BoxShape.rectangle,//borderShape
+            color: widget.backgroundColor, //containerColor
+            borderRadius:
+                BorderRadius.circular(widget.borderRadius ?? 10), //borderRadius
+            shape: widget.boxShape ?? BoxShape.rectangle, //borderShape
             border: Border.all(
-              width: widget.borderWidth ?? 0,//borderWidth
-              color: widget.borderColor ?? widget.backgroundColor,//borderColor
+              width: widget.borderWidth ?? 0, //borderWidth
+              color: widget.borderColor ?? widget.backgroundColor, //borderColor
             ),
             boxShadow: [
               //bottomRightShadowProperties
               BoxShadow(
                   color: widget.bottomRightShadowColor,
-                  offset: widget.bottomRightOffset ?? const Offset(2, 2),//x and y coordinates of shadow
-                  blurRadius: widget.bottomRightShadowBlurRadius ?? 15,// how many pixels on the screen blend into each other; thus, a larger value will create more blur.
-                  spreadRadius: widget.bottomRightShadowSpreadRadius ?? 1),// positive values will cause the shadow to expand and grow bigger, negative values will cause the shadow to shrink
+                  offset: widget.bottomRightOffset ??
+                      const Offset(2, 2), //x and y coordinates of shadow
+                  blurRadius: widget.bottomRightShadowBlurRadius ??
+                      15, // how many pixels on the screen blend into each other; thus, a larger value will create more blur.
+                  spreadRadius: widget.bottomRightShadowSpreadRadius ??
+                      1), // positive values will cause the shadow to expand and grow bigger, negative values will cause the shadow to shrink
               //topLEftShadowProperties
               BoxShadow(
                   color: widget.topLeftShadowColor,
-                  offset: widget.topLeftOffset ?? const Offset(-2, -2),//x and y coordinates of shadow
-                  blurRadius: widget.topLeftShadowBlurRadius ?? 15,// how many pixels on the screen blend into each other; thus, a larger value will create more blur.
-                  spreadRadius: widget.topLeftShadowSpreadRadius ?? 1),// positive values will cause the shadow to expand and grow bigger, negative values will cause the shadow to shrink
+                  offset: widget.topLeftOffset ??
+                      const Offset(-2, -2), //x and y coordinates of shadow
+                  blurRadius: widget.topLeftShadowBlurRadius ??
+                      15, // how many pixels on the screen blend into each other; thus, a larger value will create more blur.
+                  spreadRadius: widget.topLeftShadowSpreadRadius ??
+                      1), // positive values will cause the shadow to expand and grow bigger, negative values will cause the shadow to shrink
             ]),
-        child: widget.child,//child widget of our button
+        child: widget.child, //child widget of our button
       ),
     );
   }
